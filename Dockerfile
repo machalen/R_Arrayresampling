@@ -26,5 +26,5 @@ RUN Rscript -e 'if (!requireNamespace("BiocManager", quietly = TRUE)) install.pa
 RUN Rscript -e 'BiocManager::install(c("sva","Biobase","limma", "BiocGenerics","affxparser","affy", "affyPLM", "aroma.light", "gcrma", "oligo", "oligoClasses", "pdInfoBuilder", "preprocessCore", "AffymetrixDataTestFiles", "DNAcopy", "RBGL","graph", "qvalue"))'
 
 #Install packages from CRAN
-#RUN Rscript -e 'install.packages(c("R.utils","data.table", "gtools", "gplots"))'
+RUN Rscript -e 'install.packages(c("R.utils","data.table", "gtools", "gplots"))'
 
